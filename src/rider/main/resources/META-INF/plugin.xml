@@ -48,6 +48,9 @@
     <extensionPoint qualifiedName="com.jetbrains.rider.plugins.reqnrollriderplugin.injector.injectorExtensionPoint"
                     interface="com.jetbrains.rider.plugins.reqnrollriderplugin.injector.GherkinInjectorExtensionPoint"
                     dynamic="true"/>
+    <extensionPoint qualifiedName="com.intellij.platform.lsp.serverSupportProvider"
+                    interface="com.jetbrains.rider.plugins.reqnrollriderplugin.BddLspServerSupportProvider"
+    />
   </extensionPoints>
   <change-notes>
 <![CDATA[
