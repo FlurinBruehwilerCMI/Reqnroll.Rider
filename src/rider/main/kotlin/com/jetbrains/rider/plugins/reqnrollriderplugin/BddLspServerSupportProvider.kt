@@ -31,7 +31,7 @@ class BddLspServerSupportProvider : LspServerSupportProvider {
         )
 }
 
-private class BddLspServerDescriptor(project: Project) : ProjectWideLspServerDescriptor(project, "Foo") {
+private class BddLspServerDescriptor(project: Project) : ProjectWideLspServerDescriptor(project, "BDD LSP") {
     override fun isSupportedFile(file: VirtualFile) = file.extension == "feature"
     override fun createCommandLine() = GeneralCommandLine(PathManager.getPluginsPath() + "/reqnrollriderplugin/lsp/BddLspServer.exe")
 }
