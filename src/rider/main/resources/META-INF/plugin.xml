@@ -1,6 +1,6 @@
 <idea-plugin require-restart="true">
   <id>net.reqnroll</id>
-  <name>Reqnroll for Rider</name>
+  <name>CMI BDD for Rider</name>
   <version>_PLACEHOLDER_</version>
   <vendor url="https://reqnroll.net/">Reqnroll</vendor>
   <idea-version since-build="_PLACEHOLDER_" until-build="_PLACEHOLDER_" />
