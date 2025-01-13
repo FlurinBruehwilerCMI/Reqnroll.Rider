@@ -37,6 +37,7 @@
     <!--    <applicationConfigurable groupId="language" instance="com.jetbrains.rider.plugins.reqnrollriderplugin.SampleOptionsPage" id="SampleOptionsPage" />-->
     <dependencySupport kind="dotnet" coordinate="Reqnroll" displayName="Reqnroll"/>
     <dependencySupport kind="dotnet" coordinate="Specflow" displayName="Specflow"/>
+    <platform.lsp.serverSupportProvider implementation="com.jetbrains.rider.plugins.reqnrollriderplugin.BddLspServerSupportProvider"/>
   </extensions>
   
   <actions>
@@ -48,9 +49,6 @@
     <extensionPoint qualifiedName="com.jetbrains.rider.plugins.reqnrollriderplugin.injector.injectorExtensionPoint"
                     interface="com.jetbrains.rider.plugins.reqnrollriderplugin.injector.GherkinInjectorExtensionPoint"
                     dynamic="true"/>
-    <extensionPoint qualifiedName="com.intellij.platform.lsp.serverSupportProvider"
-                    interface="com.jetbrains.rider.plugins.reqnrollriderplugin.BddLspServerSupportProvider"
-    />
   </extensionPoints>
   <change-notes>
 <![CDATA[
