@@ -35,6 +35,8 @@ namespace ReSharperPlugin.ReqnrollRiderPlugin.References
 
         public override ResolveResultWithInfo ResolveWithoutCache()
         {
+            return new ResolveResultWithInfo(EmptyResolveResult.Instance, ResolveErrorType.OK);
+
             var psiServices = myOwner.GetPsiServices();
             var reqnrollStepsDefinitionsCache = psiServices.GetComponent<ReqnrollStepsDefinitionsCache>();
             var stepKind = myOwner.EffectiveStepKind;

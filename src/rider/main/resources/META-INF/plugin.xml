@@ -11,7 +11,7 @@
 
   <description>
 <![CDATA[
-<p>Adds support for syntax highlighting, smart navigation, and auto-completion to help you write better Gherkin feature files and automation code.</p>
+<p>A fork of the Reqnroll Rider Plugin with CMI specific additions</p>
 ]]>
   </description>
 
