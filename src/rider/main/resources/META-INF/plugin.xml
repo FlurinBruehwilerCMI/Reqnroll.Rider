@@ -16,6 +16,7 @@
   </description>
 
   <extensions defaultExtensionNs="com.intellij">
+    <platform.lsp.serverSupportProvider implementation="com.jetbrains.rider.plugins.reqnrollriderplugin.BddLspServerSupportProvider"/>
     <notificationGroup id="Reqnroll" displayType="BALLOON"/>
     <fileType name="Reqnroll" language="GherkinDotnet" extensions="feature" implementationClass="com.jetbrains.rider.plugins.reqnrollriderplugin.psi.GherkinFileType" />
     <lang.parserDefinition language="GherkinDotnet" implementationClass="com.jetbrains.rider.plugins.reqnrollriderplugin.psi.GherkinParserDefinition"/>
@@ -37,7 +38,6 @@
     <!--    <applicationConfigurable groupId="language" instance="com.jetbrains.rider.plugins.reqnrollriderplugin.SampleOptionsPage" id="SampleOptionsPage" />-->
     <dependencySupport kind="dotnet" coordinate="Reqnroll" displayName="Reqnroll"/>
     <dependencySupport kind="dotnet" coordinate="Specflow" displayName="Specflow"/>
-    <platform.lsp.serverSupportProvider implementation="com.jetbrains.rider.plugins.reqnrollriderplugin.BddLspServerSupportProvider"/>
   </extensions>
   
   <actions>
